@@ -1,11 +1,331 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <title> Página mágica do crys =D</title>
-    <link type="text/css" rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Titulo da página</h1>
-    <p>Conteúdo da página. esste conteúdo é mto massa homi =D</p>
-  </body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Crystian Leão</title>
+		<link type="text/css" href="css/pepper-grinder/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				// Accordion
+				$(".accordion").accordion({ header: "h3" });
+
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Ok": function() {
+							$(this).dialog("close");
+						},
+						"Cancel": function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+			});
+		</script>
+		<style type="text/css">
+			body{ 
+                font: 82.5% "Trebuchet MS", sans-serif; 
+                margin: 50px; 
+                background-image: url(css/pepper-grinder/images/ui-bg_fine-grain_10_f8f7f6_60x60.png);
+            }
+			.demoHeaders { 
+                margin-top: 2em; 
+            }
+			#dialog_link {
+                padding: .4em 1em .4em 20px;
+                text-decoration: none;
+                position: relative;
+            }
+			#dialog_link span.ui-icon {
+                margin: 0 5px 0 0;
+                position: absolute;
+                left: .2em;
+                top: 50%;
+                margin-top: -8px;
+            }
+			ul#icons {
+                margin: 0; 
+                padding: 0;
+            }
+			ul#icons li {
+                margin: 2px; 
+                position: relative; 
+                padding: 4px 0; 
+                cursor: pointer; 
+                float: left;  
+                list-style: none;
+            }
+			ul#icons span.ui-icon {
+                float: left; 
+                margin: 0 4px;
+            }
+            #profilePicture {
+                float:right; 
+                padding: 8px; 
+                border: 2px solid #888; 
+                margin-left: 15px;
+                background-color: #FFF
+            }
+		</style>
+	</head>
+	<body>
+    <!-- Tabs -->
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Sobre</a></li>
+            <li><a href="#tabs-2">POO</a></li>
+            <li><a href="#tabs-3">LDWP</a></li>
+            <li><a href="#tabs-4">WDE</a></li>
+        </ul>
+        <div id="tabs-1">
+            <h2 class="demoHeaders">Crystian Wendel Meneses Leão</h2>
+            <div class="accordion">
+                <div>
+                    <h3><a href="#">Bio</a></h3>
+                    <div>
+                        <img id="profilePicture" src="crystian.jpg" />
+                        <h2>Crystian Leão</h2>
+                        <p>
+                            Mestre em Ciência da Computação pela Universidade Federal de Pernambuco em 2012 sob orientação da professora doutora Judith Kelner, Formado em 2009 com láurea na Universidade Católica de Pernambuco (Unicap) no curso de Bacharelado em Ciência da Computação, possui experiência profissional diversificada, trabalhando com C#, C/C++, Objective-C, Java, Ruby on Rails, Jsp, Php, Progress, CUDA, ASP.NET, Javascript, OpenCV, OpenGL e iOS SDK. Tem interesse na área de computação gráfica, mas especificamente realidade aumentada e realidade diminuída. Também vem atuando como professor do Unibratec desde o início de 2011 lecionando disciplinas relacionadas com as tecnologias HTML, CSS, JavaScript, C#, ASP.NET e JAVA.
+                        </p>
+                        <p><br/></p>
+                        <p>
+                            Master in Computer Science from the Federal University of Pernambuco in 2012 under supervision of Professor Dr. Judith Kelner, undergraduated in 2009 with laurel at the Catholic University of Pernambuco (Unicap) in Computer Science, he has a diverse professional experience, working with C# , C/C++, Objective-C, Java, Ruby on Rails, JSP, PHP, Progress, CUDA, ASP.NET, Javascript, OpenCV, OpenGL and iOS SDK. He is interested in computer graphics, specifically augmented and diminished reality. Also works as professor at Unibratec since early 2011 teaching courses related to HTML, CSS, JavaScript, C #, ASP.NET, JAVA and OOP.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Curriculo</a></h3>
+                    <div>
+                        <h2>Professor, pesquisador e programador</h2>
+                        <p>Professor de disciplinas de programação WEB e Desktop, e pesquisador nas áreas de Visão Computacional, Computação Gráfica, Realidade Aumentada e Realidade Diminuída.</p>
+                        <div style="width: 50%; float:right">
+                            <h2>Experiência</h2>
+                            <ul>
+                                <li>
+                                    <strong>GRVM - Grupo de Pesquisa em Realidade Virtual e Multimídia</strong>, Pesquisador, 04/2010 - Atual.<br/>
+                                    Pesquisador envolvido em projetos de visão computacional, realidade aumentada e paralelização de algoritmos. 
+                                </li>
+                                <li>
+                                    <strong>Unibratec</strong>, Professor, 2/2011 - Atual<br/>
+                                    Professor dos cursos técnico em multimídia e técnico em informática, em disciplinas relacionadas a C#, ASP.NET, HTML, CSS, JavaScript, e JAVA.
+                                </li>
+                                <li>
+                                    <strong>Kraft Consulting</strong>, Programador Júnior, 09/2008 - 04-2010<br/>
+                                    Programador Júnior envolvidos em projetos com Progress, C# e JAVA.
+                                </li>
+                                <li>
+                                    <strong>Kernel Informática</strong>, Estagiário, 08/2008 - 09/2008<br/>
+                                    Programador envolvido em um projeto com JAVA, JSP, HTML, CSS e JavaScript. 
+                                </li>
+                                <li>
+                                    <strong>Secretaria de Saúde do Estado de Pernambuco</strong>, Estagiário, 05/2008 - 08/2008<br/>
+                                    Programador envolvido em projetos com PHP, Visual Basic e JAVA.
+                                </li>
+                            </ul>
+                        </div>
+                        <h2>Competências</h2>
+                        <ul>
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>Objective-C</li>
+                            <li>C/C++</li>
+                            <li>Ruby on Rails</li>
+                            <li>HTML/CSS/javascript</li>
+                            <li>CUDA</li>
+                            <li>OpenCV</li>
+                            <li>Progress</li>
+                        </ul>
+                        <h2>Formação</h2>
+                        <ul>
+                            <li>
+                                Mestrado Acadêmico em Ciência da Computação: UFPE, em andamento
+                            </li>
+                            <li>
+                                Bacharel em Ciência da Computação: Universidade Católica de Pernambuco, 2009. 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-2">
+            <h2 class="demoHeaders">Programação Orientada a Objetos</h2>
+            <div class="accordion">
+                <div>
+                    <h3><a href="#">Avisos</a></h3>
+                    <div class="ui-widget">
+                        <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+                            <p>
+                                <span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+                                <strong>Sem avisos no momento.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Material de aula</a></h3>
+                    <div>
+                        <ul>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.1.pdf">Aula 1</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.2.pdf">Aula 2</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.3.pdf">Aula 3</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.4.pdf">Aula 4</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.5.pdf">Aula 5</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.6.pdf">Aula 6</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.7.pdf">Aula 7</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.8.pdf">Aula 8</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.9.pdf">Aula 9</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.10.pdf">Aula 10</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.11.pdf">Aula 11</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.12.pdf">Aula 12</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Exercícios</a></h3>
+                    <div>
+                        <ul>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.1.pdf">Lista 1</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.2.pdf">Lista 2</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.3.pdf">Lista 3</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.4.pdf">Lista 4</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.5.pdf">Lista 5</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.6.pdf">Lista 6</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.7.pdf">Lista 7</a></li>
+                            <li><a href="http://unibratec.crystian.me/POO/POO.Lista.8.pdf">Lista 8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-3">
+            <h2 class="demoHeaders">Linguagem de Programação Web de Arquitetura Proprietária</h2>
+            <div class="accordion">
+                <div>
+                    <h3><a href="#">Avisos</a></h3>
+                    <div class="ui-widget">
+                        <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+                            <p>
+                                <span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+                                <strong>Sem avisos no momento.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Material de aula</a></h3>
+                    <div>
+                        <ul>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.1.pdf">Aula 1</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.2.pdf">Aula 2</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.3.pdf">Aula 3</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.4.pdf">Aula 4</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.5.pdf">Aula 5</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.6.pdf">Aula 6</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.7.pdf">Aula 7</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.8.pdf">Aula 8</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Exercícios</a></h3>
+                    <div>
+                        <ul>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.1.pdf">Lista 1</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.2.pdf">Lista 2</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.3.pdf">Lista 3</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.4.pdf">Lista 4</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.5.pdf">Lista 5</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.6.pdf">Lista 6</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.7.pdf">Lista 7</a></li>
+                            <li><a href="http://unibratec.crystian.me/LDWP/LDWP.Lista.8.pdf">Lista 8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-4">
+            <h2 class="demoHeaders">Web Design</h2>
+            <div class="accordion">
+                <div>
+                    <h3><a href="#">Avisos</a></h3>
+                    <div class="ui-widget">
+                        <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+                            <p>
+                                <span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+                                <strong>Sem avisos no momento.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Material de aula</a></h3>
+                    <div>
+                        <ul>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.1.pdf">Aula 1</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.2.pdf">Aula 2</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.3.pdf">Aula 3</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.4.pdf">Aula 4</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.5.pdf">Aula 5</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.6.pdf">Aula 6</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.7.pdf">Aula 7</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.8.pdf">Aula 8</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.9.pdf">Aula 9</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.10.pdf">Aula 10</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.11.pdf">Aula 11</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.12.pdf">Aula 12</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3><a href="#">Exercícios</a></h3>
+                    <div>
+                        <ul>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.1.pdf">Lista 1</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.2.pdf">Lista 2</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.3.pdf">Lista 3</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.4.pdf">Lista 4</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.5.pdf">Lista 5</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.6.pdf">Lista 6</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.7.pdf">Lista 7</a></li>
+                            <li><a href="http://unibratec.crystian.me/WDE/WDE.Lista.8.pdf">Lista 8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+        <!--
+        <div class="ui-widget">
+			<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+				<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+				<strong>Hey!</strong> Sample ui-state-highlight style.</p>
+			</div>
+		</div>
+        -->
+        
+		<!-- Highlight / Error -->
+		<!--
+		<div class="ui-widget">
+			<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+				<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+				<strong>Alert:</strong> Sample ui-state-error style.</p>
+			</div>
+		</div>
+        -->
+
+	</body>
 </html>
+
+
